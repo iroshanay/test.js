@@ -28,3 +28,27 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++
+// stack (primitive), heap (non- primitive)
+
+let myYoutubeName = "abcdefg"
+let anothername = myYoutubeName
+anothername = "1234"
+
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+let userOne = {
+    email:"user@gmail.com", 
+    paypal: "user.paypal"
+}
+
+let userTwo = userOne
+userTwo.email = "two@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
