@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,19 +10,20 @@
     <button>Button Clicked</button>
 </body>
 <script>
-    class React{
+    class React {
         constructor(){
             this.library = "React"
             this.server = "https://localhost:300"
 
             //requirement
-            document.querySelector('button').addEventListener('click',this.handleClick.bind(this))
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleClick.bind(this))
+
         }
         handleClick(){
             console.log("button clicked");
             console.log(this.server);
-            
-            
         }
     }
 

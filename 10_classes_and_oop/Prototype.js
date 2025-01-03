@@ -1,70 +1,68 @@
-// let myName = "Roshanay   "
-// let myChannel = "chai   "
+
+// let myName = "hitesh     "
+// let mychannel = "chai     "
+
 // console.log(myName.trueLength);
 
+
 let myHeros = ["thor", "spiderman"]
+
 
 let heroPower = {
     thor: "hammer",
     spiderman: "sling",
 
     getSpiderPower: function(){
-        console.log(`Spide power is ${this.spiderman}`);
-        
+        console.log(`Spidy power is ${this.spiderman}`);
     }
 }
 
-Object.prototype.roshanay = function(){
-    console.log(`roshanay is present in all objects`);
-    
+Object.prototype.hitesh = function(){
+    console.log(`hitesh is present in all objects`);
 }
 
-Array.prototype.heyRoshanay = function(){
-    console.log(`Roshanay says hello`);
-    
+Array.prototype.heyHitesh = function(){
+    console.log(`Hitesh says hello`);
 }
 
-// heroPower.roshanay()
-myHeros.roshanay( )
-// heroPower.heyRoshanay()
-myHeros.heyRoshanay()
+// heroPower.hitesh()
+// myHeros.hitesh()
+// myHeros.heyHitesh()
+// heroPower.heyHitesh()
 
+// inheritance
 
-//inheritance
 const User = {
     name: "chai",
-    email: "chai@google.com",
-
+    email: "chai@google.com"
 }
+
 const Teacher = {
     makeVideo: true
 }
-const TeachingSuppport = {
-    isAvailable: false
 
+const TeachingSupport = {
+    isAvailable: false
 }
- const TASupport = {
+
+const TASupport = {
     makeAssignment: 'JS assignment',
-    fulltime: true, 
-    __proto__: TeachingSuppport
- }
+    fullTime: true,
+    __proto__: TeachingSupport
+}
 
 Teacher.__proto__ = User
 
 // modern syntax
-Object.setPrototypeOf(TeachingSuppport, Teacher)
+Object.setPrototypeOf(TeachingSupport, Teacher)
 
-let anotherUsername = "ChaiAurCode   "
+let anotherUsername = "ChaiAurCode     "
 
-String.prototype.trueLenght = function(){
+String.prototype.trueLength = function(){
     console.log(`${this}`);
-    
-    console.log(`True length is : ${this.trim().length}`);
-    
-    
-    
+    console.log(`True length is: ${this.trim().length}`);
 }
 
-anotherUsername.trueLenght()
-"Roshanay".trueLenght()
-"iceTea".trueLenght()
+anotherUsername.trueLength()
+"hitesh".trueLength()
+"iceTea".trueLength()

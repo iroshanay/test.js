@@ -1,29 +1,27 @@
- class User {
+
+class User {
     constructor(username){
-        this.username
+        this.username = username
     }
+
     logMe(){
-        console.log(`Username is ${this.username}`);
-        
+        console.log(`Username: ${this.username}`);
     }
-    static createID(){
+
+    static createId(){
         return `123`
-        
     }
- }
+}
 
- const Roshanay = new User("Roshanay")
-//  console.log(Roshanay.createID());
+const hitesh = new User("hitesh")
+// console.log(hitesh.createId())
 
- class Teacher extends User{
+class Teacher extends User {
     constructor(username, email){
-       super(username)
+        super(username)
         this.email = email
-
     }
+}
 
- }
-
- const iphone = new Teacher("iphone","iphone@gmail.com")
-iphone.logMe()
- 
+const iphone = new Teacher("iphone", "i@phone.com")
+console.log(iphone.createId());

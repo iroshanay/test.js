@@ -9,15 +9,16 @@
 ## why use OOP
 
 ## parts of OOP
-Object literal
+Object literal 
 
-- Constructor funcion
+- Constructor function
 - Prototypes
 - Classes
 - Instances (new, this)
 
+
 ## 4 pillars
 Abstraction
 Encapsulation
-Interhitance
+Inheritance
 Polymorphism
