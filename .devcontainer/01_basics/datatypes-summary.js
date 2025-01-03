@@ -1,5 +1,8 @@
-// Primitive
-// 7 types : String, Number, Boolean, Null, Undefined, Symbol, BigInt
+
+//  Primitive
+
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
 const score = 100
 const scoreValue = 100.3
 
@@ -12,43 +15,24 @@ const anotherId = Symbol('123')
 
 console.log(id === anotherId);
 
-const bigNumber = 23423424234234234234234n
+// const bigNumber = 3456543576654356754n
 
-// Reference(Non Primitive )
+
+
+// Reference (Non primitive)
+
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"]
+const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
-    name: "roshanay",
-    age: 20
+    name: "hitesh",
+    age: 22,
 }
+
 const myFunction = function(){
-    console.log("Hello World");
-    
+    console.log("Hello world");
 }
 
-console.log(typeof myFunction);
+console.log(typeof anotherId);
 
-
-//+++++++++++++++++++++++++++++++++++++++++++++
-// stack (primitive), heap (non- primitive)
-
-let myYoutubeName = "abcdefg"
-let anothername = myYoutubeName
-anothername = "1234"
-
-
-console.log(myYoutubeName);
-console.log(anothername);
-
-let userOne = {
-    email:"user@gmail.com", 
-    paypal: "user.paypal"
-}
-
-let userTwo = userOne
-userTwo.email = "two@gmail.com"
-
-console.log(userOne.email);
-console.log(userTwo.email);
-
+// https://262.ecma-international.org/5.1/#sec-11.4.3

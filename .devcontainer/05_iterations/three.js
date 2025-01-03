@@ -1,35 +1,40 @@
+
 // for of
-// ["","",""]
-//[{},{},{}]
-const arr = [1,2,3,4,5]
+
+// ["", "", ""]
+// [{}, {}, {}]
+
+const arr = [1, 2, 3, 4, 5]
+
 for (const num of arr) {
-//    console.log(num);   
+    //console.log(num);
 }
 
-const greetings = "Hello World!"
+const greetings = "Hello world!"
 for (const greet of greetings) {
-    // console.log(`Each char is ${greet}`);    
+    //console.log(`Each char is ${greet}`)
 }
-//Maps
+
+// Maps
 
 const map = new Map()
 map.set('IN', "India")
-map.set('USA', "United Stated of America")
+map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")
 
 
 // console.log(map);
 
-
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
-    
 }
+
 const myObject = {
-    Game1: 'NFS',
-    Game2: 'Spideman'
+    game1: 'NFS',
+    game2: 'Spiderman'
 }
+
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
     
